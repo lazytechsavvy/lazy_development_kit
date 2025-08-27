@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lazy_development_kit/lazy_development_kit.dart';
+import 'package:ldk/ldk.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

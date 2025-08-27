@@ -1,6 +1,6 @@
-name: lazy_development_kit
+name: ldk
 description: "A Flutter SDK that wraps Strapi's REST APIs into a simple, type-safe, and intuitive client-side library."
-version: 1.0.0
+version: 2.0.0
 homepage: https://github.com/subhajitkar/lazy_development_kit
 repository: https://github.com/subhajitkar/lazy_development_kit
 issue_tracker: https://github.com/subhajitkar/lazy_development_kit/issues
@@ -17,6 +17,12 @@ dependencies:
   dio: ^5.4.0
   web_socket_channel: ^2.4.0
   
+  # GraphQL Support
+  graphql: ^5.1.3
+  gql: ^0.14.0
+  gql_link: ^0.5.0
+  gql_http_link: ^0.4.5
+  
   # Serialization & Data Handling
   json_annotation: ^4.8.1
   
@@ -32,6 +38,13 @@ dependencies:
   
   # Logging
   logger: ^2.0.2+1
+  
+  # Offline Storage & Caching
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  
+  # Connectivity
+  connectivity_plus: ^5.0.2
 
 dev_dependencies:
   flutter_test:
@@ -45,6 +58,9 @@ dev_dependencies:
   # Testing
   mockito: ^5.4.4
   http_mock_adapter: ^0.6.1
+  
+  # Code Generation for Hive
+  hive_generator: ^2.0.1
   
   # Code Quality
   very_good_analysis: ^5.1.0

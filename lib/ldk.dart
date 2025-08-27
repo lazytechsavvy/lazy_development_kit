@@ -59,8 +59,8 @@ export 'src/graphql_client.dart';
 // Intelligent caching
 export 'src/intelligent_cache.dart';
 
-// Core V2 exports
-export 'src/ldk_v2.dart';
+// Note: LDKV2 is not exported - users should use LDK class instead
+// export 'src/ldk_v2.dart';
 
 // Offline storage and sync
 export 'src/offline_storage.dart';

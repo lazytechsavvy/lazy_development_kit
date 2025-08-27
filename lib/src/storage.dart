@@ -3,9 +3,9 @@ import 'dart:io';
 import 'package:dio/dio.dart';
 import 'package:mime/mime.dart';
 
-import 'exceptions.dart';
-import 'models/strapi_file.dart';
-import 'utils/http_client.dart';
+import 'package:ldk/src/exceptions.dart';
+import 'package:ldk/src/models/strapi_file.dart';
+import 'package:ldk/src/utils/http_client.dart';
 
 /// File upload service for Strapi integration.
 class LDKStorage {

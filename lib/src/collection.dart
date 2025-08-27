@@ -1,9 +1,11 @@
 import 'dart:async';
 
-import 'exceptions.dart';
-import 'models/responses.dart';
-import 'utils/http_client.dart';
-import 'utils/query_builder.dart';
+import 'package:meta/meta.dart';
+
+import 'package:ldk/src/exceptions.dart';
+import 'package:ldk/src/models/responses.dart';
+import 'package:ldk/src/utils/http_client.dart';
+import 'package:ldk/src/utils/query_builder.dart';
 
 /// Represents a Strapi collection for CRUD operations.
 class LDKCollection {
@@ -14,6 +16,10 @@ class LDKCollection {
 
   /// The name of the Strapi collection.
   final String collectionName;
+
+  /// Gets the HTTP client for subclasses.
+  @protected
+  LDKHttpClient get httpClient => _httpClient;
 
   /// Gets the API endpoint for this collection.
   String get _endpoint => '/api/$collectionName';
