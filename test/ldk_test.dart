@@ -1,6 +1,6 @@
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:ldk/ldk.dart';
+import 'package:strapi_ldk/strapi_ldk.dart';
 
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();

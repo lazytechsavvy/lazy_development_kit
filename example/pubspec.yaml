@@ -1,5 +1,6 @@
 name: ldk_example
 description: Example app demonstrating the usage of Lazy Development Kit (LDK) for Strapi.
+publish_to: none
 version: 1.0.0+1
 
 environment:
@@ -9,7 +10,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  ldk:
+  strapi_ldk:
     path: ../
 
 dev_dependencies:

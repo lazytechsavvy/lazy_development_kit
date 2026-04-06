@@ -4,9 +4,9 @@ import 'dart:convert';
 import 'package:logger/logger.dart';
 import 'package:rxdart/rxdart.dart';
 
-import 'package:ldk/src/exceptions.dart';
-import 'package:ldk/src/models/responses.dart';
-import 'package:ldk/src/offline_storage.dart';
+import 'package:strapi_ldk/src/exceptions.dart';
+import 'package:strapi_ldk/src/models/responses.dart';
+import 'package:strapi_ldk/src/offline_storage.dart';
 
 /// Intelligent caching layer with smart cache strategies and automatic invalidation.
 class LDKIntelligentCache {
@@ -297,7 +297,7 @@ class LDKIntelligentCache {
   /// Invalidates cache by key.
   Future<void> invalidate(String key) async {
     try {
-      await _offlineStorage.getCachedData(key); // This will remove if expired
+      await _offlineStorage.getCachedData<dynamic>(key); // This will remove if expired
 
       // Cancel scheduled invalidation
       _invalidationTimers[key]?.cancel();

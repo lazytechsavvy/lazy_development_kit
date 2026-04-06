@@ -3,7 +3,7 @@ import 'dart:io';
 import 'package:dio/dio.dart';
 import 'package:logger/logger.dart';
 
-import 'package:ldk/src/exceptions.dart';
+import 'package:strapi_ldk/src/exceptions.dart';
 
 /// HTTP client wrapper for Strapi API communication.
 class LDKHttpClient {

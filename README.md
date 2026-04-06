@@ -1,9 +1,13 @@
-# LDK (Lazy Development Kit) for Strapi
+# Strapi LDK (Lazy Development Kit)
 
-[![pub package](https://img.shields.io/pub/v/lazy_development_kit.svg)](https://pub.dev/packages/lazy_development_kit)
+[![pub package](https://img.shields.io/pub/v/strapi_ldk.svg)](https://pub.dev/packages/strapi_ldk)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Documentation](https://img.shields.io/badge/docs-netlify-blue.svg)](https://lazy-development-kit.netlify.app)
 
-A comprehensive Flutter SDK that wraps Strapi's REST and GraphQL APIs into a simple, type-safe, and intuitive client-side library. LDK provides a Firebase-like experience while retaining Strapi's flexibility.
+> [!TIP]
+> **Official Documentation**: Check out our comprehensive guides and API reference at https://lazy-development-kit.netlify.app
+
+A comprehensive Flutter SDK that wraps Strapi's REST and GraphQL APIs into a simple, type-safe, and intuitive client-side library. Strapi LDK provides a Firebase-like experience while retaining Strapi's flexibility.
 
 ## 🚀 Phase 2 Now Available!
 
@@ -39,7 +43,7 @@ Add LDK to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  ldk: ^2.0.0
+  strapi_ldk: ^2.0.3
 ```
 
 ## Quick Start
@@ -47,7 +51,7 @@ dependencies:
 ### 🎯 Phase 1 (Basic) - Stable API
 
 ```dart
-import 'package:ldk/ldk.dart';
+import 'package:strapi_ldk/strapi_ldk.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -64,7 +68,7 @@ void main() async {
 ### 🚀 Phase 2 (Advanced) - New Features
 
 ```dart
-import 'package:ldk/ldk.dart';
+import 'package:strapi_ldk/strapi_ldk.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -548,9 +552,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Support
 
-- 📖 [Documentation](https://github.com/subhajitkar/lazy_development_kit/wiki)
-- 🐛 [Issue Tracker](https://github.com/subhajitkar/lazy_development_kit/issues)
-- 💬 [Discussions](https://github.com/subhajitkar/lazy_development_kit/discussions)
+- 📖 [Official Documentation](https://lazy-development-kit.netlify.app)
+- 🐛 [Issue Tracker](https://github.com/lazytechsavvy/lazy_development_kit/issues)
+- 💬 [Discussions](https://github.com/lazytechsavvy/lazy_development_kit/discussions)
 
 ## Roadmap
 

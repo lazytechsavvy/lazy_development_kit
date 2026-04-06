@@ -1,16 +1,16 @@
 import 'dart:async';
 
-import 'package:ldk/src/auth.dart';
-import 'package:ldk/src/collection.dart';
-import 'package:ldk/src/enhanced_auth.dart';
-import 'package:ldk/src/enhanced_collection.dart';
-import 'package:ldk/src/exceptions.dart';
-import 'package:ldk/src/graphql_client.dart';
-import 'package:ldk/src/intelligent_cache.dart';
-import 'package:ldk/src/offline_storage.dart';
-import 'package:ldk/src/realtime.dart';
-import 'package:ldk/src/storage.dart';
-import 'package:ldk/src/utils/http_client.dart';
+import 'package:strapi_ldk/src/auth.dart';
+import 'package:strapi_ldk/src/collection.dart';
+import 'package:strapi_ldk/src/enhanced_auth.dart';
+import 'package:strapi_ldk/src/enhanced_collection.dart';
+import 'package:strapi_ldk/src/exceptions.dart';
+import 'package:strapi_ldk/src/graphql_client.dart';
+import 'package:strapi_ldk/src/intelligent_cache.dart';
+import 'package:strapi_ldk/src/offline_storage.dart';
+import 'package:strapi_ldk/src/realtime.dart';
+import 'package:strapi_ldk/src/storage.dart';
+import 'package:strapi_ldk/src/utils/http_client.dart';
 
 /// Main entry point for the Lazy Development Kit (LDK) for Strapi.
 class LDK {

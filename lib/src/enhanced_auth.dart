@@ -6,11 +6,11 @@ import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:logger/logger.dart';
 import 'package:rxdart/rxdart.dart';
 
-import 'package:ldk/src/auth.dart';
-import 'package:ldk/src/exceptions.dart';
-import 'package:ldk/src/models/responses.dart';
-import 'package:ldk/src/models/user.dart';
-import 'package:ldk/src/utils/http_client.dart';
+import 'package:strapi_ldk/src/auth.dart';
+import 'package:strapi_ldk/src/exceptions.dart';
+import 'package:strapi_ldk/src/models/responses.dart';
+import 'package:strapi_ldk/src/models/user.dart';
+import 'package:strapi_ldk/src/utils/http_client.dart';
 
 /// Enhanced authentication service with token refresh and improved security.
 class LDKEnhancedAuth {

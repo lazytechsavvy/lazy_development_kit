@@ -1,9 +1,8 @@
 import 'dart:async';
 
 import 'package:graphql/client.dart';
-import 'package:logger/logger.dart';
 
-import 'package:ldk/src/exceptions.dart';
+import 'package:strapi_ldk/src/exceptions.dart';
 
 /// GraphQL client for Strapi integration with real-time subscriptions.
 class LDKGraphQLClient {
@@ -14,8 +13,6 @@ class LDKGraphQLClient {
     bool enableLogging = false,
     Duration? connectTimeout,
   }) {
-    _logger = Logger();
-
     // Create HTTP link for queries and mutations
     final httpLink = HttpLink(
       '${baseUrl.endsWith('/') ? baseUrl.substring(0, baseUrl.length - 1) : baseUrl}/graphql',
@@ -33,7 +30,6 @@ class LDKGraphQLClient {
   }
 
   late final GraphQLClient _client;
-  late final Logger _logger;
 
   /// Updates the authentication token for all requests.
   void setAuthToken(String token) {
@@ -141,7 +137,7 @@ class LDKGraphQLClient {
           loading: result.isLoading,
           errors: result.exception?.graphqlErrors,
         );
-      }).handleError((error) {
+      }).handleError((Object error) {
         if (error is! LDKException) {
           throw LDKNetworkException(
               'GraphQL subscription failed: ${error.toString()}',
@@ -164,7 +160,7 @@ class LDKGraphQLClient {
     T Function(Map<String, dynamic>)? parseData,
   }) {
     // Simplified implementation using periodic queries
-    return Stream.periodic(const Duration(seconds: 30)).asyncMap((_) async {
+    return Stream<QueryResult<T>>.periodic(const Duration(seconds: 30)).asyncMap((_) async {
       final result = await this.query<T>(
         query,
         variables: variables,

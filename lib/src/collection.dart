@@ -2,10 +2,10 @@ import 'dart:async';
 
 import 'package:meta/meta.dart';
 
-import 'package:ldk/src/exceptions.dart';
-import 'package:ldk/src/models/responses.dart';
-import 'package:ldk/src/utils/http_client.dart';
-import 'package:ldk/src/utils/query_builder.dart';
+import 'package:strapi_ldk/src/exceptions.dart';
+import 'package:strapi_ldk/src/models/responses.dart';
+import 'package:strapi_ldk/src/utils/http_client.dart';
+import 'package:strapi_ldk/src/utils/query_builder.dart';
 
 /// Represents a Strapi collection for CRUD operations.
 class LDKCollection {

@@ -4,10 +4,10 @@ import 'dart:convert';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:rxdart/rxdart.dart';
 
-import 'package:ldk/src/exceptions.dart';
-import 'package:ldk/src/models/responses.dart';
-import 'package:ldk/src/models/user.dart';
-import 'package:ldk/src/utils/http_client.dart';
+import 'package:strapi_ldk/src/exceptions.dart';
+import 'package:strapi_ldk/src/models/responses.dart';
+import 'package:strapi_ldk/src/models/user.dart';
+import 'package:strapi_ldk/src/utils/http_client.dart';
 
 /// Authentication service for Strapi integration.
 class LDKAuth {

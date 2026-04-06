@@ -1,0 +1,2 @@
+# Exclude the documentation site from the published package
+ldk-documentation-site/

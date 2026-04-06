@@ -1,13 +1,13 @@
 import 'dart:async';
 
-import 'package:ldk/src/collection.dart';
-import 'package:ldk/src/exceptions.dart';
-import 'package:ldk/src/graphql_client.dart';
-import 'package:ldk/src/intelligent_cache.dart';
-import 'package:ldk/src/models/responses.dart';
-import 'package:ldk/src/offline_storage.dart';
-import 'package:ldk/src/realtime.dart';
-import 'package:ldk/src/utils/query_builder.dart';
+import 'package:strapi_ldk/src/collection.dart';
+import 'package:strapi_ldk/src/exceptions.dart';
+import 'package:strapi_ldk/src/graphql_client.dart';
+import 'package:strapi_ldk/src/intelligent_cache.dart';
+import 'package:strapi_ldk/src/models/responses.dart';
+import 'package:strapi_ldk/src/offline_storage.dart';
+import 'package:strapi_ldk/src/realtime.dart';
+import 'package:strapi_ldk/src/utils/query_builder.dart';
 
 /// Enhanced collection with advanced querying, caching, and real-time features.
 class LDKEnhancedCollection extends LDKCollection {
@@ -374,7 +374,6 @@ class LDKEnhancedCollection extends LDKCollection {
     LDKQueryBuilder? query,
     Duration refreshInterval = const Duration(seconds: 30),
   }) {
-    final queryParams = query?.toQueryParameters() ?? <String, String>{};
 
     // Start with cached data if available
     final controller =

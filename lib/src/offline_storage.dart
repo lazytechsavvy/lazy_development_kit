@@ -6,8 +6,8 @@ import 'package:hive_flutter/hive_flutter.dart';
 import 'package:logger/logger.dart';
 import 'package:rxdart/rxdart.dart';
 
-import 'package:ldk/src/exceptions.dart';
-import 'package:ldk/src/models/responses.dart';
+import 'package:strapi_ldk/src/exceptions.dart';
+import 'package:strapi_ldk/src/models/responses.dart';
 
 /// Offline storage service for caching and synchronization.
 class LDKOfflineStorage {
@@ -333,7 +333,7 @@ class LDKOfflineStorage {
   Future<void> _executeOperation(OfflineOperation operation) async {
     // This would typically delegate to the appropriate service
     // For now, we'll just simulate the operation
-    await Future.delayed(const Duration(milliseconds: 100));
+    await Future<void>.delayed(const Duration(milliseconds: 100));
 
     switch (operation.type) {
       case OperationType.create:

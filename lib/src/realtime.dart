@@ -1,16 +1,14 @@
 import 'dart:async';
 
-import 'package:logger/logger.dart';
 import 'package:rxdart/rxdart.dart';
 
-import 'package:ldk/src/exceptions.dart';
-import 'package:ldk/src/graphql_client.dart';
+import 'package:strapi_ldk/src/exceptions.dart';
+import 'package:strapi_ldk/src/graphql_client.dart';
 
 /// Real-time service for live data updates via WebSocket and GraphQL subscriptions.
 class LDKRealtime {
   /// Creates a new [LDKRealtime] instance.
   LDKRealtime(this._graphqlClient) {
-    _logger = Logger();
     _subscriptionsController =
         BehaviorSubject<Map<String, StreamSubscription>>.seeded({});
     _connectionController = BehaviorSubject<RealtimeConnectionState>.seeded(
@@ -19,7 +17,6 @@ class LDKRealtime {
   }
 
   final LDKGraphQLClient _graphqlClient;
-  late final Logger _logger;
   late final BehaviorSubject<Map<String, StreamSubscription>>
       _subscriptionsController;
   late final BehaviorSubject<RealtimeConnectionState> _connectionController;

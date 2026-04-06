@@ -1,3 +1,14 @@
+## 2.0.3
+- Correcting official GitHub repository and issues links.
+- Version bump to 2.0.3.
+
+## 2.0.2
+- Improved official documentation link: https://lazy-development-kit.netlify.app
+
+## 2.0.1
+- Added official documentation link: https://lazy-development-kit.netlify.app
+- Updated README with various fixes and package name references.
+
 ## 2.0.0 - Phase 2 Release 🚀
 
 ### Major New Features

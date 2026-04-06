@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ldk/ldk.dart';
+import 'package:strapi_ldk/strapi_ldk.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

@@ -1,15 +1,14 @@
 import 'dart:async';
 
-import 'package:ldk/src/auth.dart';
-import 'package:ldk/src/enhanced_auth.dart';
-import 'package:ldk/src/enhanced_collection.dart';
-import 'package:ldk/src/exceptions.dart';
-import 'package:ldk/src/graphql_client.dart';
-import 'package:ldk/src/intelligent_cache.dart';
-import 'package:ldk/src/offline_storage.dart';
-import 'package:ldk/src/realtime.dart';
-import 'package:ldk/src/storage.dart';
-import 'package:ldk/src/utils/http_client.dart';
+import 'package:strapi_ldk/src/auth.dart';
+import 'package:strapi_ldk/src/enhanced_auth.dart';
+import 'package:strapi_ldk/src/enhanced_collection.dart';
+import 'package:strapi_ldk/src/exceptions.dart';
+import 'package:strapi_ldk/src/graphql_client.dart';
+import 'package:strapi_ldk/src/intelligent_cache.dart';
+import 'package:strapi_ldk/src/offline_storage.dart';
+import 'package:strapi_ldk/src/realtime.dart';
+import 'package:strapi_ldk/src/utils/http_client.dart';
 
 /// Phase 2 implementation of LDK with advanced features.
 class LDKV2 {
@@ -18,7 +17,6 @@ class LDKV2 {
   static LDKV2? _instance;
   LDKHttpClient? _httpClient;
   LDKAuth? _auth;
-  LDKStorage? _storage;
   LDKGraphQLClient? _graphqlClient;
   LDKIntelligentCache? _cache;
   LDKRealtime? _realtime;
@@ -167,9 +165,6 @@ class LDKV2 {
         // Use basic auth service
         ldk._auth = LDKAuth(ldk._httpClient!);
       }
-
-      // Initialize storage service
-      ldk._storage = LDKStorage(ldk._httpClient!);
     } catch (e) {
       throw LDKConfigurationException(
           'Failed to initialize LDK V2: ${e.toString()}');
@@ -429,7 +424,6 @@ class LDKV2 {
         .._graphqlClient = null
         .._enhancedAuth = null
         .._auth = null
-        .._storage = null
         .._httpClient = null;
     }
 
