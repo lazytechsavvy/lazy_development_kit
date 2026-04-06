@@ -1,4 +1,4 @@
-/// Lazy Development Kit (LDK) - A Flutter SDK for Strapi integration.
+/// Strapi LDK (Lazy Development Kit) - A Flutter SDK for Strapi integration.
 ///
 /// This library provides a simple, type-safe, and intuitive interface
 /// for working with Strapi backends in Flutter applications.
@@ -19,7 +19,7 @@
 /// - Advanced querying with aggregations
 /// - Optimistic updates
 /// - Transaction support
-library ldk;
+library strapi_ldk;
 
 // === PHASE 1 EXPORTS ===
 
